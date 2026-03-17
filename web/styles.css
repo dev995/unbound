@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+  background: #f7f9fc;
+}
+
+.topbar {
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid #dde3ea;
+  background: #ffffff;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.topbar p {
+  margin: 0.4rem 0 0;
+  color: #4b5563;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 260px 1fr 380px;
+  gap: 0.9rem;
+  padding: 0.9rem;
+}
+
+.panel {
+  background: #ffffff;
+  border: 1px solid #dde3ea;
+  border-radius: 8px;
+  padding: 0.9rem;
+  min-width: 0;
+}
+
+.panel h2 {
+  margin: 0 0 0.8rem;
+  font-size: 1rem;
+}
+
+.filters label {
+  display: block;
+  margin-bottom: 0.7rem;
+  font-size: 0.9rem;
+}
+
+input,
+select {
+  width: 100%;
+  margin-top: 0.3rem;
+  padding: 0.5rem;
+  border: 1px solid #cfd8e3;
+  border-radius: 6px;
+}
+
+.tableWrap {
+  max-height: 72vh;
+  overflow: auto;
+}
+
+.zoneLeaderboardBlock {
+  margin-top: 0.9rem;
+  border-top: 1px solid #edf1f5;
+  padding-top: 0.8rem;
+}
+
+.zoneLeaderboardBlock h3 {
+  margin: 0 0 0.6rem;
+  font-size: 0.92rem;
+}
+
+.zoneControls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-bottom: 0.45rem;
+}
+
+.zoneLeaderboardTable {
+  max-height: 320px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.45rem;
+  border-bottom: 1px solid #edf1f5;
+  font-size: 0.86rem;
+}
+
+tr.clickable:hover {
+  background: #f4f8ff;
+  cursor: pointer;
+}
+
+tr.active {
+  background: #eaf2ff;
+}
+
+.muted {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.metricCard {
+  border: 1px solid #e6ecf2;
+  border-radius: 8px;
+  padding: 0.6rem;
+  margin-bottom: 0.7rem;
+}
+
+.metricCard h3 {
+  margin: 0 0 0.5rem;
+  font-size: 0.92rem;
+}
+
+.metricRow {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+}
+
+.barTrack {
+  width: 100%;
+  height: 8px;
+  border-radius: 999px;
+  background: #ecf0f6;
+  overflow: hidden;
+  margin-top: 0.4rem;
+}
+
+.barFill {
+  height: 100%;
+  background: #2563eb;
+}
+
+.zoneTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  margin-top: 0.55rem;
+  min-width: 460px;
+}
+
+.zoneTableWrap {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.zoneTable th,
+.zoneTable td {
+  border-bottom: 1px solid #edf1f5;
+  padding: 0.35rem;
+  white-space: normal;
+}
+
+.zoneSectionTitle {
+  font-size: 0.84rem;
+  font-weight: 600;
+  margin-bottom: 0.45rem;
+}
+
+.zoneRankGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.zoneRankCard {
+  border: 1px solid #e6ecf2;
+  border-radius: 6px;
+  padding: 0.45rem;
+  background: #fbfdff;
+}
+
+.zoneRankHeader {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.zoneRankLine {
+  font-size: 0.78rem;
+  color: #374151;
+}
+
+@media (max-width: 1100px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}

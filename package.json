@@ -1,0 +1,14 @@
+{
+  "name": "cult-unbound-analytics",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "http-server . -p 8080 -c-1",
+    "fetch:data": "node tools/fetchResultsData.mjs",
+    "build": "node tools/buildSite.mjs",
+    "preview": "http-server dist -p 8080 -c-1"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

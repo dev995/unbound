@@ -1,0 +1,116 @@
+{
+  "race": {
+    "id": "99ceee05-c4a6-46b6-8a3e-6b754aea14ca",
+    "slug": "cult-unbound-championship-2026",
+    "name": "cult Unbound Championship 2026",
+    "date": "14th March 2026",
+    "events": [
+      "MENS SINGLE",
+      "WOMENS SINGLE",
+      "MENS DOUBLE",
+      "WOMENS DOUBLE",
+      "MENS LITE",
+      "WOMENS LITE",
+      "TRAINERS WAVE",
+      "ADIDAS WAVE",
+      "LEADERS CIRCUIT"
+    ]
+  },
+  "totals": {
+    "participants": 668,
+    "timedParticipants": 666,
+    "detailsCalls": 668
+  },
+  "events": [
+    {
+      "event": "MENS SINGLE",
+      "categories": [
+        "OVERALL",
+        "MENS SINGLE"
+      ],
+      "participants": 166,
+      "timedParticipants": 166,
+      "leaderTimeSec": 2285
+    },
+    {
+      "event": "WOMENS SINGLE",
+      "categories": [
+        "OVERALL",
+        "WOMENS SINGLES"
+      ],
+      "participants": 38,
+      "timedParticipants": 38,
+      "leaderTimeSec": 2400
+    },
+    {
+      "event": "MENS DOUBLE",
+      "categories": [
+        "OVERALL",
+        "MENS DOUBLES"
+      ],
+      "participants": 136,
+      "timedParticipants": 134,
+      "leaderTimeSec": 1710
+    },
+    {
+      "event": "WOMENS DOUBLE",
+      "categories": [
+        "OVERALL",
+        "WOMENS DOUBLES"
+      ],
+      "participants": 82,
+      "timedParticipants": 82,
+      "leaderTimeSec": 1895
+    },
+    {
+      "event": "MENS LITE",
+      "categories": [
+        "OVERALL",
+        "MENS LITE"
+      ],
+      "participants": 133,
+      "timedParticipants": 133,
+      "leaderTimeSec": 1435
+    },
+    {
+      "event": "WOMENS LITE",
+      "categories": [
+        "OVERALL",
+        "WOMENS LITE"
+      ],
+      "participants": 65,
+      "timedParticipants": 65,
+      "leaderTimeSec": 2025
+    },
+    {
+      "event": "TRAINERS WAVE",
+      "categories": [
+        "OVERALL",
+        "TRAINERS WAVE"
+      ],
+      "participants": 25,
+      "timedParticipants": 25,
+      "leaderTimeSec": 2414
+    },
+    {
+      "event": "ADIDAS WAVE",
+      "categories": [
+        "OVERALL",
+        "ADIDAS WAVE"
+      ],
+      "participants": 13,
+      "timedParticipants": 13,
+      "leaderTimeSec": 2349
+    },
+    {
+      "event": "LEADERS CIRCUIT",
+      "categories": [
+        "OVERALL",
+        "LEADERS CIRCUIT"
+      ],
+      "participants": 10,
+      "timedParticipants": 10,
+      "leaderTimeSec": 1592
+    }
+  ]
+}
