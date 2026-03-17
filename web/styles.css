@@ -60,6 +60,25 @@ select {
   border-radius: 6px;
 }
 
+.filterActions {
+  margin-top: 0.8rem;
+}
+
+.filterActions button {
+  width: 100%;
+  padding: 0.55rem 0.65rem;
+  border: 1px solid #2563eb;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.filterActions button:hover {
+  background: #1e4fd6;
+}
+
 .tableWrap {
   max-height: 72vh;
   overflow: auto;

@@ -7,9 +7,9 @@ import {
   getParticipantKey,
   applyFilters,
 } from "./state.js?v=20260317c";
-import { buildIndexes, getZoneRankedRows } from "./analytics.js?v=20260317e";
-import { renderList } from "./renderList.js?v=20260317e";
-import { renderAthleteDetails } from "./renderAthlete.js?v=20260317e";
+import { buildIndexes, getZoneRankedRows } from "./analytics.js?v=20260317f";
+import { renderList } from "./renderList.js?v=20260317f";
+import { renderAthleteDetails } from "./renderAthlete.js?v=20260317f";
 
 const nameSearch = document.querySelector("#nameSearch");
 const bibSearch = document.querySelector("#bibSearch");
@@ -22,6 +22,7 @@ const zoneCategoryFilter = document.querySelector("#zoneCategoryFilter");
 const zoneFilter = document.querySelector("#zoneFilter");
 const zoneRankingCount = document.querySelector("#zoneRankingCount");
 const zoneRankingBody = document.querySelector("#zoneRankingBody");
+const searchBtn = document.querySelector("#searchBtn");
 
 let indexes = { byEvent: {}, zoneTimesByEvent: {} };
 const participantByKey = new Map();
@@ -122,22 +123,29 @@ function fillEventDropdown() {
   }
 }
 
+function runSearchFilters() {
+  setFilter({
+    name: nameSearch.value,
+    bib: bibSearch.value,
+    event: eventFilter.value,
+  });
+  if (eventFilter.value !== "ALL") {
+    zoneCategoryFilter.value = eventFilter.value;
+    fillZoneDropdown(eventFilter.value);
+  }
+  refreshUI();
+}
+
 function wireFilters() {
-  nameSearch.addEventListener("input", (event) => {
-    setFilter({ name: event.target.value });
-    refreshUI();
+  searchBtn.addEventListener("click", runSearchFilters);
+  nameSearch.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") runSearchFilters();
   });
-  bibSearch.addEventListener("input", (event) => {
-    setFilter({ bib: event.target.value });
-    refreshUI();
+  bibSearch.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") runSearchFilters();
   });
-  eventFilter.addEventListener("change", (event) => {
-    setFilter({ event: event.target.value });
-    if (event.target.value !== "ALL") {
-      zoneCategoryFilter.value = event.target.value;
-      fillZoneDropdown(event.target.value);
-    }
-    refreshUI();
+  eventFilter.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") runSearchFilters();
   });
   zoneCategoryFilter.addEventListener("change", (event) => {
     fillZoneDropdown(event.target.value);
