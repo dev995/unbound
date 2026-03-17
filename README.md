@@ -49,12 +49,18 @@ Open:
 This repo includes a GitHub Actions workflow at `.github/workflows/deploy-pages.yml`.
 
 1. Create a GitHub repository and push this project.
-2. Ensure your default branch is `main`.
+2. Ensure your default branch is `main` or `master`.
 3. In GitHub repo settings:
    - go to **Pages**
    - set **Source** to **GitHub Actions**
-4. Push to `main` (or run the workflow manually from Actions tab).
-5. GitHub will publish your app to a public Pages URL.
+4. Push to your default branch (or run the workflow manually from Actions tab).
+5. Open the deployed site at:
+   - `https://<your-username>.github.io/<repo-name>/`
+
+Notes:
+
+- `https://github.com/<your-username>/<repo-name>` is the repository page and will show README, not the deployed app.
+- GitHub branch-mode Pages does not support selecting `web/` directly. If you use branch-mode, select root and this project-level `index.html` will redirect to `web/index.html`.
 
 ## 5) Use the site
 
